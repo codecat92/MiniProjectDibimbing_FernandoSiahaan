@@ -46,3 +46,59 @@ img {
     background-color: #ca7310;
     color: #fff;
 }
+
+
+/*slider */
+
+.slide-1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/ramen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/borgar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+} 
+
+ section img {
+    max-height: 600px;
+    width: auto;
+}
+
+#about .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #f58d17;
+}
+
+/*Intro Text*/
+.intro-text {
+    margin-bottom: 40px;
+     text-align: center;
+}
+
+.intro-text p {
+    max-width: 600px;
+    margin: 16px auto 0 auto;
+}
+
+
