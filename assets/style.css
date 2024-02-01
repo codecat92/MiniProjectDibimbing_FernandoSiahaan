@@ -51,21 +51,21 @@ img {
 /*slider */
 
 .slide-1 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/pizza.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/borgar.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide-2 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/ramen.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/pizza.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide-3 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/borgar.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/ramen.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,10 +78,17 @@ section {
 
 } 
 
- section img {
-    max-height: 600px;
-    width: auto;
+/*CSS untuk memunculkan shadow ketika di hover */
+.shadow-on-hover {
+    transition: all 0.4s ease;
+
 }
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+}
+
+ 
 
 #about .divider {
     width: 60px;
@@ -102,3 +109,50 @@ section {
 }
 
 
+/* Custom css for menu */
+ #menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+     
+ }
+
+ #menu .nav-pills .nav-link.active {
+    background-color: #f58d17;
+    color: #ffffff;
+ }
+
+
+ /*css for rating stars*/
+
+ .menu-item .stars {
+    color: #f58d17;
+ }
+
+ /*features*/
+ #features {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.feature {
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.feature .feature-icon {
+    color: white;
+    background-color: #f58d17;
+    height: 80px;
+    width: 80px;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+}

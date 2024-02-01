@@ -10,6 +10,12 @@
   
     <!--Custom CSS Link-->
     <link rel="stylesheet" href="assets/style.css">
+
+    <!--Remix Icon link-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     </head>
 
   <body>
@@ -118,19 +124,22 @@
 
       <!--About-->
       <section id="about">
-        <div class="container ">
+        <div class="container">
 
-          <div class="row gy-4 align-items-center ">
+          <div class="row align-items-center ">
 
-            <div class="col-lg-6 px-3">
-              <img src="assets/images/barista.jpg" alt="" class="barista">
+            <div class="col-lg-6">
+              <img src="assets/images/barista.jpg" alt="" class="img-fluid"
+               style=
+               "box-shadow: 7px 10px 10px rgba(44,40,33,.5);">
             </div>
 
-            <div class="col-lg-6 px-3">
+            <div class="col-lg-5 offset-1">
               <h1>About us</h1>
               <div class="divider my-4 "></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptatibus praesentium assumenda enim rem eaque fugit tempore dolor placeat veniam laborum quis veritatis tenetur commodi, voluptates illo? Explicabo, distinctio. Itaque?</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ea obcaecati vel sequi tempore iusto perspiciatis suscipit dolorem ducimus recusandae nisi quia eius qui, eos consequatur velit nulla esse voluptate!</p>
+              <p>Welcome to Crown!</p>
+              <p>Where the heartwarming essence of home-cooked meals meets the joy of shared moments. Our cozy family restaurant invites you to indulge in dishes crafted with love</p>
+              <p>Designed not just to satisfy your appetite but to warm your soul. Join us for a dining experience that goes beyond, creating cherished memories one delicious bite at a time.</p>
               <a href="#" class="btn btn-brand mt-3">Explore Menu</a>
             </div>
 
@@ -139,8 +148,8 @@
       </section>
 
 
-      <!--Menu-->
-      <section>
+      <!--Bagian teks pengenalan Menu-->
+      <section id="menu" class="bg-light">
         <div class="container">
           <div class="col-12 intro-text">
             <h1>Explore Our Menu</h1>
@@ -148,23 +157,751 @@
           </div>
           </div>
 
-          <!--Navs & tabs-->
+          <!--Navs & tabs Menu-->
+          <!--Tombol pills menu-->
           <div class="container">
-           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+           <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All items</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-All" aria-selected="true">Breakfast</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-All" aria-selected="true">Lunch</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-All" aria-selected="true">Dinner</button>
               </li>
           
             </ul>
+
+
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-              All Dishes
-            </div>
+              <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+               
+                <!--Card Menu-->
+
+                <div class="row gy-4">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade show" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+               <div class="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+               <div class="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+                <div class="row gy-4">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./assets/images/squarepizza.jpg" alt="" class="img-fluid">
+                      <div class="menu-item-content p-4">
+                        <div>
+                          <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                          <span>Rated(4.5)</span>
+                        </div>
+                        <h5 class="mt-1 mb-2"><a href="#">Meatlover Square Pizza</a></h5>
+                        <p class="small">Big square casserole pizza with to fill up your meatlover tummy.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+            
           
-          </div>
+            </div>
         </div>
       </section>
 
+
+
+
+      <!-- Features-->
+      <section id="features" class="bg-cover>
+        <div class ="container">
+          <div class="row">
+            <div class="col-12 intro-text">
+              <h1 class="text-white">Why to choose us?</h1>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt voluptatum quis tempore sapiente molestiae laudantium, sequi voluptatem? Deleniti laboriosam quis illum, delectus impedit id facilis quasi illo ab atque.</p>
+            </div>
+          </div>
+          <div class="row mx-5">
+            <div class="col-lg-3 col-sm-6">
+              <div class="feature py-5 px-4 text-center">
+                <div class="feature-icon">
+                  <i class="ri-wifi-fill"></i>
+                </div>
+                <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, corporis.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="feature py-5 px-4 text-center">
+                <div class="feature-icon">
+                  <i class="ri-wifi-fill"></i>
+                </div>
+                <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, corporis.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="feature py-5 px-4 text-center">
+                <div class="feature-icon">
+                  <i class="ri-wifi-fill"></i>
+                </div>
+                <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, corporis.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="feature py-5 px-4 text-center">
+                <div class="feature-icon">
+                  <i class="ri-wifi-fill"></i>
+                </div>
+                <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, corporis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       
 
