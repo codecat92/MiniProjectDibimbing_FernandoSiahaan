@@ -86,6 +86,7 @@ section {
 
 .shadow-on-hover:hover {
     box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+    border-radius: 50px;
 }
 
  
@@ -156,3 +157,29 @@ section {
     text-align: center;
     border-radius: 5px;
 }
+
+
+/*Chef image css*/
+.team-member img {
+    border: .5px solid #f58d17;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    
+}
+
+.team-member img:hover {
+    border-radius: 50px;
+}
+
+
+
+
+/*Testimony*/
+
+#reviews {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/terrace.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
