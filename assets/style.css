@@ -135,7 +135,7 @@ section {
 
  /*features*/
  #features {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/pizza.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/darkpub2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ section {
 /*Testimony*/
 
 #reviews {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/terrace.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/darkpub.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
